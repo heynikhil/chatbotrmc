@@ -9,14 +9,14 @@ require 'get_buffet.php';
 require 'get_menu.php';
 require 'get_photos.php';
 require 'get_promotion.php';*/
-require 'get_business_hours.php';
+require 'get_WardInfo.php';
 
 function processMessage($input) {
 
 	$action = $input["result"]["action"];
 	switch($action){
-		case 'businessHours':
-			getBusinessHours();
+		case 'wardinfo':
+			getWardinfo();
 			break;
 		default :
 			//moreInfo();
