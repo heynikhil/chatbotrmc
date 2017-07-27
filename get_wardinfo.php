@@ -4,7 +4,7 @@ function getWardInfo(){
 	//global $restaurant_id;
 	require 'config.php';
 
-	$businessHours="";
+	$print="";
 
 	$Query="SELECT * FROM wardinfo WHERE wardno=?";
 	$Result=pg_query($con,$Query);
