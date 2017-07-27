@@ -1,6 +1,6 @@
 <?php
 
-function getBusinessHours(){
+function getWardInfo(){
 	global $restaurant_id;
 	require 'config.php';
 
