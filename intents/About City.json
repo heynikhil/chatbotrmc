@@ -1,0 +1,150 @@
+{
+  "userSays": [
+    {
+      "id": "419970d0-6958-45b8-b37c-de1d0db868e3",
+      "data": [
+        {
+          "text": "Rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1e0c17ce-a1c2-49c0-b07a-fd440b7a7481",
+      "data": [
+        {
+          "text": "what is "
+        },
+        {
+          "text": "rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fff5d1f0-a56a-4e68-8dac-31ac72169c81",
+      "data": [
+        {
+          "text": "about",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " city"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "259f5733-546d-46cc-8ee5-3c5c2b23363e",
+      "data": [
+        {
+          "text": "tell me "
+        },
+        {
+          "text": "about",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6a933bd9-52cd-4ef9-801c-8187f822a032",
+      "data": [
+        {
+          "text": "I want to "
+        },
+        {
+          "text": "know",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " about "
+        },
+        {
+          "text": "Rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "006b49b1-233c-4f82-9471-07d29802f43e",
+      "data": [
+        {
+          "text": "tell me "
+        },
+        {
+          "text": "about",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Rajkot",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "7b98874e-13fd-4e8a-9e5a-3be26010daad",
+  "name": "About City",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Rajkot is a city of Gujarat state in India and administrative headquarters of the Rajkot District, located on the banks of the Aji River and Niari River. Rajkot is located at 22.3° N 70.78° E. It has an average height of 134 meters. The city is spread in the area of 104.86 square km. Rajkot was the former capital of the princely state of Saurashtra. Rajkot was once a base for the Western States British government office and rapidly expanded into a prosperous, lively business center, with an old city. This city is also associated with the Mahatma Gandhi, who lived here for several years. Rajkot was the capital of the Saurashtra state from 15 April 1948 to 31 October 1956 before merging in bilingual Bombay State on 1 November 1956. Rajkot was merged into Gujarat State from bilingual Bombay state on May 1, 1960. Today, the city of Rajkot is the home of several temples. During summers, the temperature ranges between 24°C and 42°C. In winter, the temperature varies between 10°C and 24°C. The best time to visit Rajkot is between the months of October and March. The weather of Rajkot is the most pleasant at this time of the year.",
+            "Rajkot is the fourth largest city in the state of Gujarat, India, after Ahmedabad, Surat, and Vadodara. Rajkot is the 35th largest urban agglomeration in India, with a population more than 1.28 million as of 2012. Rajkot is also the 22nd fastest growing city in the world. The city contains the administrative headquarters of the Rajkot District, 245 km from the state capital Gandhinagar and is located on the banks of the Aji and Nyari Rivers. Rajkot was the capital of the Saurashtra State from 15 April 1948 to 31 October 1956, before its merger to Bombay State on 1 November 1956. Rajkot was reincorporated into Gujarat State from 1 May 1960."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

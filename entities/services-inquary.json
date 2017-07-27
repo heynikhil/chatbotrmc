@@ -1,0 +1,67 @@
+{
+  "id": "35bd7952-79d8-4d5c-8701-c5f8774bcf0d",
+  "name": "services-inquary",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Property Tax",
+      "synonyms": [
+        "Property Tax"
+      ]
+    },
+    {
+      "value": "Water Charge",
+      "synonyms": [
+        "Water Charge"
+      ]
+    },
+    {
+      "value": "Profession Tax",
+      "synonyms": [
+        "Profession Tax"
+      ]
+    },
+    {
+      "value": "Solid Waste Management",
+      "synonyms": [
+        "Solid Waste Management"
+      ]
+    },
+    {
+      "value": "Booking",
+      "synonyms": [
+        "Booking",
+        "Hall booking",
+        "book"
+      ]
+    },
+    {
+      "value": "Right To Information Act",
+      "synonyms": [
+        "Right To Information Act",
+        "rti",
+        "RTI"
+      ]
+    },
+    {
+      "value": "Sports",
+      "synonyms": [
+        "Sports"
+      ]
+    },
+    {
+      "value": "Shop and Establishment",
+      "synonyms": [
+        "Shop and Establishment"
+      ]
+    },
+    {
+      "value": "24 X 7 Call Center",
+      "synonyms": [
+        "24 X 7 Call Center"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

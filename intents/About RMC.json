@@ -1,0 +1,259 @@
+{
+  "userSays": [
+    {
+      "id": "1e187faa-733e-411a-8126-ba4e0754f98f",
+      "data": [
+        {
+          "text": "tell me about "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "820e3c94-23d4-4ad8-95bc-f1ad65f9b400",
+      "data": [
+        {
+          "text": "what is "
+        },
+        {
+          "text": "Rajkot Municipal Corporation",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "eab0080a-ae2c-426b-b4d0-5787d447013a",
+      "data": [
+        {
+          "text": "tell me about "
+        },
+        {
+          "text": "Rajkot Municipal Corporation",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2c6f256b-c385-4827-bf9c-a7271771dc94",
+      "data": [
+        {
+          "text": "what is "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "fa47310d-fdd0-4e8c-9a7d-ad476e6fd885",
+      "data": [
+        {
+          "text": "about "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b8fccdd8-2be5-4068-af21-50cf860e3b8f",
+      "data": [
+        {
+          "text": "what does "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " do"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cf0aa264-49b9-4597-9258-4bb2d05314cf",
+      "data": [
+        {
+          "text": "what does "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": "  "
+        },
+        {
+          "text": "team",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "work",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " at"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "4a29261f-7219-4209-90cc-d20c91b2f036",
+      "data": [
+        {
+          "text": "I",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " want "
+        },
+        {
+          "text": "to",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "know",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "more",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "about",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "RMC",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "74f89fe7-bd0d-4667-9f33-511e88874e74",
+      "data": [
+        {
+          "text": "tell",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "me",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "more",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "about",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " RMC"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8dc8beee-1503-4973-aec9-40994541c896",
+  "name": "About RMC",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Rajkot Municipal Corporation (RMC) is a local government committed to providing basic infrastructure facilities including entertainment facilities to the people of the city. RMC is very well known for the managing the city by using private sector participation as well as an introduction of innovative mechanism in management to serve people efficiently. The city has prepared different plans for improving services and to nullify gap between services and demands."
+        },
+        {
+          "type": 1,
+          "platform": "slack",
+          "title": "",
+          "buttons": [
+            {
+              "text": "Read more on our website",
+              "postback": "http://www.example.com/"
+            }
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "slack": true
+      }
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

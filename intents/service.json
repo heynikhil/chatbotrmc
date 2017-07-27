@@ -1,0 +1,110 @@
+{
+  "userSays": [
+    {
+      "id": "04c89e2d-9e9e-4d22-857f-e829c084c4bb",
+      "data": [
+        {
+          "text": "i am looking for online services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cce6dc15-e3c0-4253-abcf-f561ba24e9a3",
+      "data": [
+        {
+          "text": "show me online services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c434a122-4694-4786-ba83-a7f7884634fd",
+      "data": [
+        {
+          "text": "list out available online services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "eff92abc-6d5d-477b-b5f3-1fb285dd4e20",
+      "data": [
+        {
+          "text": "can you tell me services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "68265d5b-4c59-4763-95ac-45809deb8f29",
+      "data": [
+        {
+          "text": "i want to know online services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "40453ac5-76a3-4be7-b196-e4a904ceb283",
+      "data": [
+        {
+          "text": "available services"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "83c2cc2d-4a27-433f-9b5f-dc6ad72a9837",
+  "name": "service",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "service-enquiry",
+      "affectedContexts": [
+        {
+          "name": "service-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "we currently providing this all services .  which service  you want?",
+            "we can help you in this all. which service  you want?"
+          ]
+        },
+        {
+          "type": 4,
+          "payload": {
+            "service": {
+              "attachment": {
+                "type": "video",
+                "payload": {
+                  "url": "https://dl.dropbox.com/s/dkd4t2pjcvertb9/Hashtutorial2.mp4?dl\u003d1"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

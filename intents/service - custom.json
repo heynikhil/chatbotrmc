@@ -1,0 +1,30 @@
+{
+  "userSays": [],
+  "id": "1ea1df27-bd75-4644-8460-9b22b8d31d45",
+  "parentId": "83c2cc2d-4a27-433f-9b5f-dc6ad72a9837",
+  "rootParentId": "83c2cc2d-4a27-433f-9b5f-dc6ad72a9837",
+  "name": "service - custom",
+  "auto": true,
+  "contexts": [
+    "service-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "service.service-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
