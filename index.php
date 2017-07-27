@@ -1,7 +1,6 @@
 <?php
 
 //$restaurant_id=1270;//902;//$_REQUEST['restaurant_id'];
-echo $hi;
 /*require 'reserve_table.php';
 require 'more_info.php';
 require 'get_address.php';
@@ -23,8 +22,8 @@ function processMessage($input) {
 			//moreInfo();
 			sendMessage(array(
 				"source" => "RMC",
-				"speech" => "..........TEXT HERE...........",
-				"displayText" => ".........TEXT HERE...........",
+				"speech" => "Default Message From Code",
+				"displayText" => "Default Message From Code",
 				"contextOut" => array()
 			));
 	}
