@@ -16,7 +16,8 @@ function processMessage($input) {
 	$action = $input["result"]["action"];
 	switch($action){
 		case 'wardinfo':
-			getWardInfo();
+			$param = $input["result"]["parameters"]["number"];
+			getWardInfo($param);
 			break;
 		default :
 			//moreInfo();
