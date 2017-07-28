@@ -22,8 +22,8 @@ function getWardInfo($param){
 	}else{
 		$arr=array(
 			"source" => "RMC",
-			"speech" => "Have some problem listing business hours.",
-			"displayText" => "Have some problem listing business hours.",
+			"speech" => "Have some problem .",
+			"displayText" => "Have some problem .",
 		);
 		sendMessage($arr);
     }
