@@ -1,12 +1,11 @@
 
+<?php
+$servername = "ec2-54-221-221-153.compute-1.amazonaws.com";
+$username = "lthwqfdnbwcqvs";
+$password = "ec3c382e3ec579974a5cbf4de9be4ba386ec84fe69483980b5f555e6b909b48a";
+$dbname = "de2fc7r4pt13n1";
 
+// Create connection
+$con =  pg_connect($servername, $username, $password, $dbname);
 
- <?php 
-        $db = pg_connect('host=ec2-54-221-221-153.compute-1.amazonaws.com port=5432 dbname=de2fc7r4pt13n1 user=lthwqfdnbwcqvs password=ec3c382e3ec579974a5cbf4de9be4ba386ec84fe69483980b5f555e6b909b48a') or die('Wrong CONN_STRING'); 
-        if (!$db) {
-                echo 'error';
-            }else{
-            echo 'success';
-            }
-
-        ?> 
+?>
