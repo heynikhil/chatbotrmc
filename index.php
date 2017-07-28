@@ -1,5 +1,5 @@
 <?php
-echo "Hello world!<br>";
+//echo "Hello world!<br>";
 
 //$restaurant_id=1270;//902;//$_REQUEST['restaurant_id'];
 /*require 'reserve_table.php';
