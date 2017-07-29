@@ -11,6 +11,8 @@ require 'get_death.php';
 require 'get_enews.php';
 require 'get_budget.php';
 require 'get_wardinfo.php';
+require 'get_library.php';
+
 
 function processMessage($input) {
 
@@ -40,6 +42,12 @@ function processMessage($input) {
 		case 'death':
 			$dtype = $input["result"]["parameters"]["types"];
 			getdeath($action,$dtype);
+			break;
+			
+		case 'library':
+			$lib = $input["result"]["parameters"]["detail"];
+			$name = $input["result"]["parameters"]["libraryname"];		
+			getlib($lib,$name);
 			break;
 			
 		default :
