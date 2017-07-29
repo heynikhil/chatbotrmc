@@ -12,6 +12,7 @@ require 'get_enews.php';
 require 'get_budget.php';
 require 'get_wardinfo.php';
 require 'get_library.php';
+require 'getAwardinfo.php';
 
 
 function processMessage($input) {
@@ -48,6 +49,11 @@ function processMessage($input) {
 			$lib = $input["result"]["parameters"]["detail"];
 			$name = $input["result"]["parameters"]["libraryname"];		
 			getlib($lib,$name);
+			break;
+			
+		case 'getAwardDetail':
+			$param = $input["result"]["parameters"]["number"];
+			getAwardDetail($param);
 			break;
 			
 		default :
