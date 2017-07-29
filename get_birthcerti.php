@@ -9,7 +9,7 @@ function getbirth($action,$btype){
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
 	
-	$certinfo="Answer " . $row[$btype];
+	$certinfo="Here is details that you require: " . $row[$btype];
         
 		$arr=array(
 			"source" => "RMC",
