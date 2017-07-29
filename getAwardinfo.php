@@ -6,7 +6,7 @@ function getAwardinfo($param){
 
 	$getAwardinfo="";
 
-	$Query="SELECT * FROM public.awardinfo WHERE Year=$param";
+	$Query="SELECT * FROM public.awardinfo WHERE Year='$param'";
 	$Result=pg_query($con,$Query);
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
