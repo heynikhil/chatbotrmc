@@ -5,8 +5,9 @@
 /*require 'reserve_table.php';
 require 'more_info.php';
 require 'get_address.php';
-require 'get_buffet.php';
-require 'get_menu.php';*/
+*/
+require 'get_birthcerti.php';
+require 'get_death.php';
 require 'get_enews.php';
 require 'get_budget.php';
 require 'get_wardinfo.php';
@@ -29,12 +30,24 @@ function processMessage($input) {
 			$param = $input["result"]["parameters"]["number"];
 			getNews($param);
 			break;
+			
+			
+		case 'birth':
+			$btype = $input["result"]["parameters"]["type"];
+			getbirth($action,$btype);
+			break;
+
+		case 'death':
+			$dtype = $input["result"]["parameters"]["types"];
+			getdeath($action,$dtype);
+			break;
+			
 		default :
 			//moreInfo();
 			sendMessage(array(
 				"source" => "RMC",
-				"speech" => "I think you are lost ? what do you want ?",
-				"displayText" => "I think you are lost ? what do you want ?",
+				"speech" => "I am not able to understand. what do you want ?",
+				"displayText" => "I am not able to understand. what do you want ?",
 				"contextOut" => array()
 			));
 	}
