@@ -7,9 +7,9 @@ function getlib($lib,$name){
 	//$wardinfo="";
 	
 	$Query="SELECT * FROM library WHERE name='$name'";
-	$Result=mysqli_query($con,$Query);
-	if(isset($Result) && !empty($Result) && mysqli_num_rows($Result) > 0){
-	$row=mysqli_fetch_assoc($Result);
+	$Result=pg_query($con,$Query);
+	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
+	$row=pg_fetch_assoc($Result);
 
 	$certinfo="Answer " . $row[$lib];
         
@@ -22,8 +22,8 @@ function getlib($lib,$name){
 	}else{
 		$arr=array(
 			"source" => "RMC",
-			"speech" => "Have some problem .",
-		 	"displayText" => "Have some problem .",
+			"speech" => "Sorry I have not that information about library .",
+		 	"displayText" => "Sorry I have not that information about library .",
 		);
 		sendMessage($arr);
     }
