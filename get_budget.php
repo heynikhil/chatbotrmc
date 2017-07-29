@@ -10,7 +10,7 @@ function getBudgetInfo($param){
 	$Result=pg_query($con,$Query);
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
-	$getBudgetInfo= " - Link: " . $row["link"];
+	$getBudgetInfo= " Here is details that you require- Link: " . $row["link"];
 
 		$arr=array(
 			"source" => "RMC",
