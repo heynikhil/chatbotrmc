@@ -11,7 +11,7 @@ function getAwardinfo($param){
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
 	//$getBudgetInfo= " Here is details : " . $row["award"]. " --- Project: " . $row["project"]. " --- Category: " . $row["category"] . " --- Given By: " . $row["GivenBy"] . " ---  " . $row["images"];
-        $getBudgetInfo= "Here is details that you require - : " . $row["award"];
+        $getAwardinfo= "Here is details that you require - : " . $row["award"];
 
 		$arr=array(
 			"source" => "RMC",
