@@ -11,7 +11,7 @@ function getlib($lib,$name){
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
 
-	$certinfo="Answer " . $row[$lib];
+	$certinfo="Here is details that you require " . $row[$lib];
         
 		$arr=array(
 			"source" => "RMC",
