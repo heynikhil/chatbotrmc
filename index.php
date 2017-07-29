@@ -53,7 +53,7 @@ function processMessage($input) {
 			
 		case 'getAwardDetail':
 			$param = $input["result"]["parameters"]["number"];
-			getAwardDetail($param);
+			getAwardinfo($param);
 			break;
 			
 		default :
