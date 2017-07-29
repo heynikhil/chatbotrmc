@@ -10,7 +10,7 @@ function getdeath($action,$dtype){
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
 	
-	$certinfo="Answer " . $row[$dtype];
+	$certinfo="Here is details that you require " . $row[$dtype];
         
 		$arr=array(
 			"source" => "RMC",
