@@ -1,15 +1,14 @@
 <?php
 
 function getdeath($action,$dtype){
-	//global $restaurant_id;
 	require 'config.php';
 
 	//$wardinfo="";
 
-	$Query="SELECT $dtype FROM certificate WHERE name='death'";
-	$Result=mysqli_query($con,$Query);
-	if(isset($Result) && !empty($Result) && mysqli_num_rows($Result) > 0){
-	$row=mysqli_fetch_assoc($Result);
+	$Query="SELECT $dtype FROM public.certificate WHERE name='death'";
+	$Result=pg_query($con,$Query);
+	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
+	$row=pg_fetch_assoc($Result);
 	
 	$certinfo="Answer " . $row[$dtype];
         
