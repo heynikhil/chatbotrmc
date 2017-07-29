@@ -1,15 +1,13 @@
 <?php
 
 function getbirth($action,$btype){
-	//global $restaurant_id;
 	require 'config.php';
 
-	//$wardinfo="";
 
-	$Query="SELECT $btype FROM certificate WHERE name='birth'";
-	$Result=mysqli_query($con,$Query);
-	if(isset($Result) && !empty($Result) && mysqli_num_rows($Result) > 0){
-	$row=mysqli_fetch_assoc($Result);
+	$Query="SELECT $btype FROM public.certificate WHERE name='birth'";
+	$Result=pg_query($con,$Query);
+	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
+	$row=pg_fetch_assoc($Result);
 	
 	$certinfo="Answer " . $row[$btype];
         
