@@ -11,7 +11,7 @@ function getWardInfo($param){
 	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
 	$row=pg_fetch_assoc($Result);
 
-	$wardinfo= "  Name: " . $row["name"]. " --- Address: " . $row["address"]. " --- MobileNo: " . $row["contact"];
+	$wardinfo= "Here is details that you require:  Name: " . $row["name"]. " --- Address: " . $row["address"]. " --- MobileNo: " . $row["contact"];
         
 		$arr=array(
 			"source" => "RMC",
