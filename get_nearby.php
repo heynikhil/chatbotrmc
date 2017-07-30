@@ -1,57 +1,52 @@
 <?php
 
 function getnearby($input){
-	//global $restaurant_id;
 	require 'config.php';
 
 	$areaname=$input["result"]["parameters"]["wardlocation"];
+	$list=$input["result"]["contexts"]["parameters"]["nearby"];
 	$name=$input["result"]["contexts"]["parameters"]["location"];
+	
 	$ans="";
 
-	foreach($name as $out)
-	{
-		$ans.=$out;
-	}
-	/* $name=explode(',', $input["result"]["contexts"]["parameters"]);//what will do here
-			   foreach($mark as $out) {
-			     $ans.=$out.",";
+	$array=explode(',', $list);//what will do here
+			   foreach($array as $out) 
+			   {
+			   	if($out == $name)  
+			   	{
+			   		$Query="SELECT wardno FROM public.wardlocation WHERE area=$param";
+					$Result=pg_query($con,$Query);
+			   	}
 			     
 			   }
+			   	}
+			}
 
-//$ans=$nearby.$name;
 	
-//$ans="";		$
+	
+	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0){
+	$row=pg_fetch_assoc($Result);
+	$getBudgetInfo= " Here is details that you require- Link: " . $row["link"];
 
- 
-		/*	$result = mysqli_query($con,"SELECT * FROM  wardlocation WHERE area='$nearby'");
-			$i=0;
-			while($rows = mysqli_fetch_array($result)) 
-			{
-			   $mark=explode(',', $rows['nearby']);//what will do here
-			   foreach($mark as $out) {
-			     $ans[$i]=$out;
-			      $i++;
-			   }
-			}*/
-		/*	foreach($ans as $out)
-			{
-			      if($out == $near)
-			      {
-					$q="SELECT wardno FROM  wardlocation WHERE area='$near'";
-					$Result=mysqli_query($con,$Query);
-					$rows=mysqli_fetch_assoc($Result);
-					$certinfo="You belong to ward number :".$rows["wardno"];
-        
-					$arr=array(
-						"source" => "RMC",
-						"speech" => $certinfo,
-						"displayText" => $certinfo,
-					);
-					sendMessage($arr);
+		$arr=array(
+			"source" => "RMC",
+			"speech" => $getBudgetInfo,
+			"displayText" => $getBudgetInfo,
+		);
+		sendMessage($arr);
+	}else{
+		$arr=array(
+			"source" => "RMC",
+			"speech" => "No year matched in database.",
+			"displayText" => "No year matched in database.",
+		);
+		sendMessage($arr);
+    }
 
-			      }
-			      else
-			      */{
+
+
+
+{
 		$arr=array(
 			"source" => "RMC",
 			"speech" => "Have some problem .",
@@ -59,13 +54,7 @@ function getnearby($input){
 		 	
 		);
 		sendMessage($arr);
-    }
-			     
-
-			    
+    }   
 			   }
-
-
-
 
 ?>
