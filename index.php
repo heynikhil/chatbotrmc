@@ -13,6 +13,8 @@ require 'get_budget.php';
 require 'get_wardinfo.php';
 require 'get_library.php';
 require 'getAwardinfo.php';
+require 'get_location.php';
+require 'get_nearby.php';
 
 
 function processMessage($input) {
@@ -54,6 +56,16 @@ function processMessage($input) {
 		case 'getAwardDetail':
 			$param = $input["result"]["parameters"]["number"];
 			getAwardinfo($param);
+			break;
+			
+		case 'wardlocation':
+			$loc = $input["result"]["parameters"]["wardlocation"];
+			getlocationtrial($loc);
+			break;
+
+		case 'nearby':
+		//	$nearby = $input["result"]["parameters"]["location"];
+			getnearby($input);
 			break;
 			
 		default :
