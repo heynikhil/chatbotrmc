@@ -1,6 +1,5 @@
 
 <?php
-$con = pg_connect("host=ec2-107-20-226-93.compute-1.amazonaws.com
-
- port=5432 dbname=dcdak6ko6gph3o user=klbthxukxzjgns password=c8528380314a140d919e9ff46db21fe3ebbc721b20676fca2382521d3b001add sslmode=require") or die("fail");
+$con = pg_connect("host=ec2-54-221-221-153.compute-1.amazonaws.com
+ port=5432 dbname=de2fc7r4pt13n1 user=lthwqfdnbwcqvs password=ec3c382e3ec579974a5cbf4de9be4ba386ec84fe69483980b5f555e6b909b48a sslmode=require") or die("fail");
 ?>
