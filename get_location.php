@@ -7,14 +7,14 @@ function getlocationtrial($loc){
 	//$wardinfo="";
 	$near = array();
 
-	$Query="SELECT * FROM wardlocation WHERE area='$loc'";
-	$Result=mysqli_query($con,$Query);
-	if(isset($Result) && !empty($Result) && mysqli_num_rows($Result) > 0)
+	$Query="SELECT * FROM public.wardlocation WHERE area='$loc'";
+	$Result=pg_query($con,$Query);
+	if(isset($Result) && !empty($Result) && pg_num_rows($Result) > 0)
 	{
 	
-		if(mysqli_num_rows($Result) ==1)
+		if(pg_num_rows($Result) ==1)
 		{
-			$row=mysqli_fetch_assoc($Result);
+			$row=pg_fetch_assoc($Result);
 			$certinfo="You belong to ward number :" . $row["wardno"];
 	        
 			$arr=array(
@@ -26,12 +26,12 @@ function getlocationtrial($loc){
 		}
 		else
 		{
-			$row=mysqli_fetch_assoc($Result);
+			$row=pg_fetch_assoc($Result);
 			$certinfo="Multiple ward exists with same location name :";
 	        
-			$result = mysqli_query($con,"SELECT * FROM  wardlocation WHERE area='$loc'");
+			$result = pg_query($con,"SELECT * FROM  public.wardlocation WHERE area='$loc'");
 
-			while($rows = mysqli_fetch_array($result)) 
+			while($rows = pg_fetch_array($result)) 
 			{
 			   $mark=explode(',', $rows["nearby"]);//what will do here
 			   foreach($mark as $out) {
