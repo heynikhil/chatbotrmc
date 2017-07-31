@@ -1,8 +1,8 @@
 <?php
+	require 'config.php';
 
 function getWardInfo($param){
 	//global $restaurant_id;
-	require 'config.php';
 
 	$wardinfo="";
 
